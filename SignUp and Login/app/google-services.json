@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "458021709678",
+    "project_id": "signup-and-login-83750",
+    "storage_bucket": "signup-and-login-83750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:458021709678:android:63a28152665739c95dc37f",
+        "android_client_info": {
+          "package_name": "com.dominic.signupandlogin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYM-5YRn4yjlN0a1WjUbgvmy0yw0jLgnA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
