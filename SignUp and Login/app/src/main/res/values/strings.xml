@@ -3,4 +3,11 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="dominic_tutorial">DOMINIC TUTORIAL</string>
+    <string name="type_your_email">Type your email</string>
+    <string name="enter_pass">Enter pass</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="enter_password">Enter password</string>
+    <string name="re_enter_password">Enter password</string>
+    <string name="already_have_a_account">Already have a account?</string>
+    <string name="sign_in">Sign In</string>
 </resources>
