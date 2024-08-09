@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="@android:color/background_light"
     tools:context=".fragments.SignUpFragment">
 
     <ImageView
@@ -68,7 +67,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/white"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
             app:hintEnabled="false">
@@ -76,7 +74,6 @@
                 android:id="@+id/emailEt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
                 android:hint="@string/type_your_email"
                 android:textSize="20sp"
                 android:inputType="textEmailAddress"
@@ -107,7 +104,6 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/white"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
             app:passwordToggleEnabled="true"
@@ -116,7 +112,6 @@
                 android:id="@+id/passEt"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@android:color/white"
                 android:hint="@string/enter_password"
                 android:textSize="20sp"
                 android:inputType="textPassword"
