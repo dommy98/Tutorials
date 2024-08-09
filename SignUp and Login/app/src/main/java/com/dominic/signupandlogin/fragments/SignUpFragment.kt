@@ -40,9 +40,9 @@ class SignUpFragment : Fragment() {
         }
 
       binding.nextBtn.setOnClickListener {
-          val email = binding.emailEt.text.toString()
-          val pass  = binding.passEt.text.toString()
-          val verifyPass = binding.rePassEt.text.toString()
+          val email = binding.emailEt.text.toString().trim()
+          val pass  = binding.passEt.text.toString().trim()
+          val verifyPass = binding.rePassEt.text.toString().trim()
 
           if (email.isNotEmpty() && pass.isNotEmpty() && verifyPass.isNotEmpty()){
               if (pass == verifyPass){
