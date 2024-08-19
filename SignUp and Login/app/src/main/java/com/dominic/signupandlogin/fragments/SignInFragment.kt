@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.core.view.isGone
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.dominic.signupandlogin.R
@@ -47,6 +48,7 @@ class SignInFragment : Fragment() {
             val pass = binding.passEt.text.toString().trim()
 
             if (email.isNotEmpty() && pass.isNotEmpty()){
+                binding.progressBar.visibility = View.VISIBLE
                 auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener {
                     if (it.isSuccessful){
                         navControl.navigate(R.id.action_signInFragment_to_homeFragment)
@@ -55,6 +57,9 @@ class SignInFragment : Fragment() {
                         Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
                     }
                 }
+            }else{
+                Toast.makeText(context, "Empty fields not allowed", Toast.LENGTH_SHORT).show()
+                binding.progressBar.visibility = View.GONE
             }
         }
     }
