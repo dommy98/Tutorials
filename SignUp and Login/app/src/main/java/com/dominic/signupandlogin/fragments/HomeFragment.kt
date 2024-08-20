@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
@@ -51,11 +52,20 @@ class HomeFragment : Fragment(), AddTodoPopupFragment.DialogNextBtnClickListener
     private fun init(view: View) {
         navControl = Navigation.findNavController(view)
         auth = FirebaseAuth.getInstance()
-        database = FirebaseDatabase.getInstance().reference
+        database = FirebaseDatabase.getInstance().reference.child("Tasks")
+            .child(auth.currentUser?.uid.toString())
     }
 
     override fun onSaveTask(todo: String, todoEt: TextInputEditText) {
-        TODO("Not yet implemented")
+        database.push().setValue(todo).addOnCompleteListener {
+            if (it.isSuccessful){
+                Toast.makeText(context, "Saved Successfully!!", Toast.LENGTH_SHORT).show()
+                todoEt.text = null
+            }else{
+                Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
+            }
+            popupFragment.dismiss()
+        }
     }
 
 

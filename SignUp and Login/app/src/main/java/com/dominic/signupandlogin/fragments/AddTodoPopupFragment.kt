@@ -42,6 +42,9 @@ class AddTodoPopupFragment : DialogFragment() {
                 Toast.makeText(context, "Please add a task", Toast.LENGTH_SHORT).show()
             }
         }
+        binding.todoClose.setOnClickListener {
+            dismiss()
+        }
     }
 
     interface DialogNextBtnClickListener{
