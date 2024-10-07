@@ -3,4 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="blue">#1a9df1</color>
+    <color name="blueBackground">#356cf9</color> <!-- Background blue color -->
+    <color name="buttonBlue">#3A69E0</color> <!-- "Try  for Free" button color -->
+    <color name="lightBlue">#DFE6F6</color> <!-- "I Already Have an Account" button color -->
+    <color name="linkBlue">#4A76F7</color>
 </resources>
